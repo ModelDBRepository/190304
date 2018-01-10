@@ -7,7 +7,19 @@ analysis and to generate the figures are in directory scripts.
 
 To successfully run a model, you need the master model file, which
 specifies reaction file, initial conditions file, morphology file,
-stimulation file and output config file. Names of master model files
+stimulation file and output config file.
+
+Run the simulation using version 2.1.10 of NeuroRD.
+This version of the java program is called stochdiff2.1.10.jar and is located in scripts/.
+To run NeuroRD:
+java -jar stochdiff2.1.10.jar <model_file>
+
+NeuroRD generates two files: one
+ending with '-mesh.txt', which specifies morphology, the other ending
+with '-conc.txt' containing amounts of molecular species (specified in
+output config file) in the region specified in output config file.
+
+Names of master model files
 start with
 "Model_one_short_dendrite_PKAc_times_3_switching_L_pump_neurogranin_"
 for the short dendrite simulations and
@@ -23,34 +35,41 @@ blocked PKA conditions, it is also indicated in the file
 name. Probably the safest thing is to have all the model files (of a
 particular model) in one directory.
 
-I do not have any output config files for short dendrite simulations,
-because I use generate_initial_information.py to run my models. This
-script will generate an output config file using initial conditions
-file. It is very convenient for simulating the short dendrite,
+An alternative method of running the simulations is to use the python script:
+generate_initial_specie_information.py
+
+usage:
+python get_initial_specie_information.py <model_master_file> <length of the simulation> [other options]
+
+get_initial_specie_information.py will make a new master_file with the ending runtime_[length of the simulation].xml
+
+If you run get_initial_specie_information.py without specifing the runtime, the script will run the simulations for one simulation step and generate a new master model file <master model file>_runtime_<simulation step>.xml and a new output file <master model file>_whole_output.xml.
+The output config specifies providing output for every molecule in the simulation.
+It will generate a new output config file (using initial conditions file)
+unless one specifies not to (e.g. for the long dendrite simulations).  
+
+This python script is very convenient for simulating the short dendrite,
 however, for simulations of the longer denrite, you might want to use
-a custom output config file to make the simulations a bit faster and
-concentration files smaller.  You will have to change the neurord path
+a custom output config file (only getting output of a subset of the molecules) 
+to make the simulations a bit faster and concentration files smaller.
+
+--help
+gives all the options of get_initial_specie_information.py (also how
+to specify custom output file).
+
+Additional information on generate_initial_specie_information.py:
+If you use this python script to run your simulations, you will have to change the neurord path
 inside the code or specify it in command line using --path. If you use
 it without --no_run switch, the model will either run for a specified
 time (in ms) or for dt and add runtime_{specified time} to the models
 filename. I run my models with --segment_concentrations and
 --segment_list=PSD,head,neck to get concentrations in the spine and
 dendrite. You can get_initial_specie_information.py also to generate
-concentrations while model is still running. I usually like to see
-whole output and don't use output files,
-get_initial_specie_information.py generates the output files. If you
-don't use my script remember to specify correct output file. --help
-gives all the options of get_initial_specie_information.py (also how
-to specify custom output file). I use make_figures.py to look at
-concentrations of individual molecular species.
+concentrations while model is still running.
+One can use the same python script to perform just the analysis with a --no_run switch.
+--chosen_species will prevent generating the output config file and instead use the custom one specified in the master model file.
 
-stochdiff2.1.10.jar in scripts/ is NeuroRD. To run NeuroRD:
-java -jar stochdiff2.1.10.jar <model_file>
-
-NeuroRD generates two files: one
-ending with '-mesh.txt', which specifies morphology, the other ending
-with '-conc.txt' containing amounts of molecular species (specified in
-output config file) in the region specified in output config file.
+I use make_figures.py to look at concentrations of individual molecular species.
 
 To generate Tables S1 and S2 use check_thresholds.py and
 check_thresholds_dendrite.py respectively. Both scripts also contain

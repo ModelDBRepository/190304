@@ -6,7 +6,7 @@
     <morphologyFile>morph_dend_0.2um_0.1_diameter_with_spine_and_injection_spines</morphologyFile>
     <stimulationFile>Stim_ISO_bath_1_train_100_Hz_L_pump_1000_nM</stimulationFile>
     <initialConditionsFile>IC_switching_steady_L_pump_neurogranin_2.0_x_PDE4_AC</initialConditionsFile>
-    <outputSchemeFile>ModelE_one_short_dendrite_cam_20000_ac_3x_leak_1000_ac_r_g_spinehead_after_100000_whole_output</outputSchemeFile>
+    <outputSchemeFile>../Model_one_short_dendrite_PKAc_times_3_switching_L_pump_neurogranin_2.0_4_trains_massed_whole_output</outputSchemeFile>
 
     <!--2D means the morphology is interpreted like a flatworm, 3D for
 roundworms. The 2D case is good for testing as it is easy to visualize the
