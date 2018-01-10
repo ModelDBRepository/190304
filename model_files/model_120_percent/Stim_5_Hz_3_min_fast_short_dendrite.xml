@@ -1,0 +1,59 @@
+<StimulationSet>
+
+    <!-- the injectionSite must match a regionLabel deefined in the morphology -->
+   
+<InjectionStim specieID="L" injectionSite="sa1[0].pointA">
+        <onset>300000</onset>
+        <duration>180000</duration>
+        <rate>0.0025</rate>
+
+        <end>480000</end>
+
+</InjectionStim>
+
+<InjectionStim specieID="L" injectionSite="fake[:].pointI">
+        <onset>300000</onset>
+        <duration>180000</duration>
+        <rate>0.01</rate>
+        <end>480000</end>
+
+</InjectionStim>
+
+<!-- Train I -->
+
+<InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
+        <onset>300000</onset>
+	<duration>3</duration>
+	<rate>100.5</rate>
+        <period>200</period>
+        <end>480000</end> 
+       
+  </InjectionStim>
+
+<InjectionStim specieID="CaB" injectionSite="sa1[0].pointA">
+        <onset>300050</onset>
+        <duration>10</duration>
+        <rate>30</rate>
+	<period>200</period>
+        <end>480080</end>
+
+  </InjectionStim>
+<InjectionStim specieID="Ca" injectionSite="fake[:].pointI">
+        <onset>300000</onset>
+	<duration>3</duration>
+	<rate>40</rate>
+        <period>200</period>
+        <end>480000</end> 
+       
+  </InjectionStim>
+
+<InjectionStim specieID="CaB" injectionSite="fake[:].pointI">
+        <onset>300050</onset>
+	<duration>10</duration>
+	<rate>4</rate>
+        <period>200</period>
+        <end>480100</end> 
+       
+  </InjectionStim>
+
+</StimulationSet>

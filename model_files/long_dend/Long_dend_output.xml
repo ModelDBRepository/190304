@@ -1,0 +1,198 @@
+<OutputScheme>
+  <OutputSet filename="all_species" dt="2000">
+
+    <OutputSpecie name="Gsbg"/>
+    <OutputSpecie name="CaBCa"/>
+    <OutputSpecie name="Gs"/>
+    <OutputSpecie name="PDE1CaMCa4"/>
+
+    <OutputSpecie name="CaB"/>
+    <OutputSpecie name="PDE1"/>
+    <OutputSpecie name="GaiGTP"/>
+    <OutputSpecie name="GasGTP"/>
+    <OutputSpecie name="AMP"/>
+    <OutputSpecie name="ncxCa"/>
+    <OutputSpecie name="pmca"/>
+    <OutputSpecie name="GsR"/>
+
+    <OutputSpecie name="GaiGDP"/>
+    <OutputSpecie name="PP2BCaMCa2"/>
+    <OutputSpecie name="CaOut"/>
+    <OutputSpecie name="CalbinC"/>
+    <OutputSpecie name="Calbin"/>
+    <OutputSpecie name="CaMCa2"/>
+  
+
+    <OutputSpecie name="ncx"/>
+    <OutputSpecie name="GasGDP"/>
+    <OutputSpecie name="ppppLRGibg"/>
+    <OutputSpecie name="PP2BCaM"/>
+    <OutputSpecie name="CaOutLeak"/>
+
+    <OutputSpecie name="LRGs"/>
+    <OutputSpecie name="I1"/>
+    <OutputSpecie name="PP2B"/>
+    <OutputSpecie name="PDE1CaMCa4cAMP"/>
+    <OutputSpecie name="pmcaCa"/>
+    <OutputSpecie name="Ip35PP1PP2BCaMCa4"/>
+  </OutputSet>
+<OutputSet filename ="Ca" dt="200">
+  <OutputSpecie       name="Ca"           />
+</OutputSet>
+
+<OutputSet filename ="L" dt="200">
+  <OutputSpecie       name="L"           />
+
+</OutputSet>
+<OutputSet filename ="cAMP" dt="200">
+  <OutputSpecie       name="cAMP"        />
+</OutputSet>
+<OutputSet filename="AC_dend" region="dendrite" dt="200">
+  <OutputSpecie       name="AC1"         />
+  <OutputSpecie       name="AC1GaiGTP"    />
+  <OutputSpecie       name="AC1GaiGTPCaMCa4"        />
+  <OutputSpecie name="AC1GasGTPCaMCa4"/>
+  <OutputSpecie name="AC1GasGTPGaiGTPCaMCa4"/>
+  <OutputSpecie name="AC1GasGTPCaMCa4ATP"/>
+  <OutputSpecie       name="AC1GasGTPGaiGTP"/>
+  <OutputSpecie       name="ATP"         />
+  <OutputSpecie       name="AC1GaiGTPCaMCa4ATP"     />
+  <OutputSpecie name="AC1GsGiCaMCa4ATP"/>
+  <OutputSpecie name="AC1GasGTP"/>
+  <OutputSpecie       name="AC1CaMCa4"      />
+  <OutputSpecie       name="AC1CaMCa4ATP"   />
+  <OutputSpecie       name="AC8"         />
+  <OutputSpecie       name="AC8CaMCa4"      />
+  <OutputSpecie       name="AC8CaMCa4ATP"   /> 
+  <OutputSpecie       name="PKA"         />
+  <OutputSpecie       name="PKAcAMP2"    />
+  <OutputSpecie       name="PKAcAMP4"    />
+  <OutputSpecie       name="PKAr"        />
+
+  <OutputSpecie name="LR"/>
+  <OutputSpecie name="PKAcLR"/>
+  <OutputSpecie name="pLR"/>
+  <OutputSpecie name="R"/>
+  <OutputSpecie name="PKAcR"/>
+  <OutputSpecie name="pR"/>
+  <OutputSpecie name="PKAcpLR"/>
+  <OutputSpecie name="ppLR"/>
+  <OutputSpecie name="PKAcpR"/>
+  <OutputSpecie name="ppR"/>
+  <OutputSpecie name="PKAcppLR"/>
+  <OutputSpecie name="pppLR"/>
+  <OutputSpecie name="PKAcppR"/>
+  <OutputSpecie name="pppR"/>
+  <OutputSpecie name="PKAcpppLR"/>
+  <OutputSpecie name="ppppLR"/>
+  <OutputSpecie name="ppppLRGi"/>
+  <OutputSpecie name="ppppLRGibg"/>
+ <OutputSpecie name="PKAcpppR"/>  
+  <OutputSpecie name="ppppRGi"/>
+  <OutputSpecie name="ppppRGibg"/>
+  <OutputSpecie name="LRGs"/>
+  <OutputSpecie name="Gibg"/>
+
+</OutputSet>
+
+<OutputSet filename="AC_head" region="head" dt="200">
+  <OutputSpecie       name="AC1"         />
+  <OutputSpecie       name="AC1GaiGTP"    />
+  <OutputSpecie       name="AC1GaiGTPCaMCa4"        />
+  <OutputSpecie name="AC1GasGTPCaMCa4"/>
+  <OutputSpecie name="AC1GasGTPGaiGTPCaMCa4"/>
+  <OutputSpecie name="AC1GasGTPCaMCa4ATP"/>
+  <OutputSpecie       name="AC1GasGTPGaiGTP"/>
+  <OutputSpecie       name="ATP"         />
+  <OutputSpecie       name="AC1GaiGTPCaMCa4ATP"     />
+  <OutputSpecie name="AC1GsGiCaMCa4ATP"/>
+  <OutputSpecie name="AC1GasGTP"/>
+  <OutputSpecie       name="AC1CaMCa4"      />
+  <OutputSpecie       name="AC1CaMCa4ATP"   />
+  <OutputSpecie       name="AC8"         />
+  <OutputSpecie       name="AC8CaMCa4"      />
+  <OutputSpecie       name="AC8CaMCa4ATP"   /> 
+  <OutputSpecie       name="PKA"         />
+  <OutputSpecie       name="PKAcAMP2"    />
+  <OutputSpecie       name="PKAcAMP4"    />
+  <OutputSpecie       name="PKAr"        />
+
+ <OutputSpecie name="LR"/>
+  <OutputSpecie name="PKAcLR"/>
+  <OutputSpecie name="pLR"/>
+  <OutputSpecie name="R"/>
+  <OutputSpecie name="PKAcR"/>
+  <OutputSpecie name="pR"/>
+  <OutputSpecie name="PKAcpLR"/>
+  <OutputSpecie name="ppLR"/>
+  <OutputSpecie name="PKAcpR"/>
+  <OutputSpecie name="ppR"/>
+  <OutputSpecie name="PKAcppLR"/>
+  <OutputSpecie name="pppLR"/>
+  <OutputSpecie name="PKAcppR"/>
+  <OutputSpecie name="pppR"/>
+  <OutputSpecie name="PKAcpppLR"/>
+  <OutputSpecie name="ppppLR"/>
+  <OutputSpecie name="ppppLRGi"/>
+  <OutputSpecie name="ppppLRGibg"/>
+ <OutputSpecie name="PKAcpppR"/>  
+  <OutputSpecie name="ppppRGi"/>
+  <OutputSpecie name="ppppRGibg"/>
+  <OutputSpecie name="LRGs"/>
+  <OutputSpecie name="Gibg"/>
+</OutputSet>
+
+<OutputSet filename="Glur" region="PSD" dt="200">
+  <OutputSpecie      name="GluR1"  />
+  <OutputSpecie      name="GluR1_S845" />
+  <OutputSpecie      name="GluR1_S831" />
+  <OutputSpecie      name="GluR1_S845_S831" />
+  <OutputSpecie      name="GluR1_PKAc" />
+  <OutputSpecie      name="GluR1_CKCam" />
+  <OutputSpecie      name="GluR1_CKpCam" />
+  <OutputSpecie      name="GluR1_CKp" />
+  <OutputSpecie      name="GluR1_S845_CKCam" />
+  <OutputSpecie      name="GluR1_S845_CKpCam" />
+  <OutputSpecie      name="GluR1_S845_CKp" />
+  <OutputSpecie      name="GluR1_S831_PKAc" />
+  <OutputSpecie      name="GluR1_S845_PP1" />
+  <OutputSpecie      name="GluR1_S845_S831_PP1" />
+  <OutputSpecie      name="GluR1_S831_PP1" />
+  <OutputSpecie      name="GluR1_S845_PP2B" />
+  <OutputSpecie      name="GluR1_S845_S831_PP2B" />
+</OutputSet>
+<OutputSet filename="PKAc" dt="200">
+  <OutputSpecie      name="PDE4"  />
+  <OutputSpecie      name="PDE4cAMP"  />
+  <OutputSpecie      name="PKAcPDE4"  />
+  <OutputSpecie      name="pPDE4"  />
+  <OutputSpecie      name="pPDE4cAMP"  />
+  <OutputSpecie       name="PKAc"        />
+  <OutputSpecie       name="I1"          />
+  <OutputSpecie       name="I1PKAc"      />
+  <OutputSpecie       name="Ip35"        />
+  <OutputSpecie       name="PP1"        />
+  <OutputSpecie       name="Ip35PP1"     />
+  <OutputSpecie       name="Ip35PP2BCaMCa4"     />
+  <OutputSpecie       name="Ip35PP1PP2BCaMCa4"    />
+  <OutputSpecie       name="PP1PP2BCaMCa4"    />
+  <OutputSpecie       name="PKAc_PDE4_cAMP"    />
+  <OutputSpecie name="Epac1cAMP"/>
+    <OutputSpecie name="Epac1"/>
+</OutputSet>
+<OutputSet filename="CaMKII" dt="200">
+    <OutputSpecie name="CKpPP1"/>
+    <OutputSpecie name="CKp"/>
+    <OutputSpecie name="CaM"/>
+    <OutputSpecie name="Complex"/>
+    <OutputSpecie name="CKpCaMCa4"/>
+    <OutputSpecie name="CKpCaMCa4PP1"/>
+    <OutputSpecie name="pComplex"/>
+    <OutputSpecie name="PP2BCaMCa4"/>
+    <OutputSpecie name="Ng"/>
+    <OutputSpecie name="CaMCa4"/>
+    <OutputSpecie name="CK"/>
+    <OutputSpecie name="CKCaMCa4"/>
+</OutputSet>
+
+</OutputScheme>
